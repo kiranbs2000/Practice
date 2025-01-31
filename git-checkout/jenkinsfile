@@ -1,0 +1,10 @@
+pipeline{
+    agent any
+    stages{
+        stage('check out'){
+            steps{
+                git branch: 'release' , url:'https://github.com/kiranbs2000/Practice.git' 
+            }
+        }
+    }
+}
